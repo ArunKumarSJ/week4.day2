@@ -18,7 +18,7 @@ public class Sortable {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement SRC = driver.findElementByXPath("//ul[@class='ui-sortable']/li[2]");
-		WebElement DST = driver.findElementByXPath("(//span[@class='ui-icon ui-icon-arrowthick-2-n-s'])[5]");
+		WebElement DST = driver.findElementByXPath("//ul[@class='ui-sortable']/li[4]");
 		Point location = DST.getLocation();
 		int x = location.getX();
 		int y = location.getY();
