@@ -87,22 +87,5 @@ public class NykkA {
 
 	}
 
-}/*
-	 * String text2 =
-	 * driver.findElementByXPath("//div[@class='table-row ']//div[2]").getText();
-	 * String REPITEM1 = text2.replaceAll("[^0-9]", ""); int COUNT1 =
-	 * Integer.parseInt(REPITEM1); System.out.println("TOTAL IS:" + COUNT1);
-	 * Thread.sleep(1000);
-	 * driver.findElementByXPath("//div[@class='second-col']").click();
-	 * Thread.sleep(1000); kse.executeScript("window.scrollBy(0,200)");
-	 * driver.findElementByXPath("(//button[@type='button'])[2]").click();
-	 * Thread.sleep(1000); String text3 = driver.
-	 * findElementByXPath("//div[@class='payment-details-tbl grand-total-cell prl20']/div[2]"
-	 * ) .getText(); String REPITEM2 = text3.replaceAll("[^0-9]", ""); int COUNT2 =
-	 * Integer.parseInt(REPITEM2); System.out.println("GRAND 2 TOTAL IS:" + COUNT2);
-	 * if (COUNT1 == COUNT2) { System.out.println("THEY ARE SAME"); }
-	 * driver.close(); driver.switchTo().window(windowHandlesList.get(1));
-	 * driver.close(); driver.switchTo().window(windowHandlesList.get(0));
-	 * driver.close();
-	 * 
-	 */
+}
+	 
