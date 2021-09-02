@@ -43,12 +43,14 @@ public class SnapDeal {
 		// System.out.println("THE SORTED LIST IS:" + LTOH);
 		Thread.sleep(20000);
 		List<WebElement> PR = driver.findElementsByXPath("//span[@class='lfloat product-price']");
-		Set<String> PRL = new TreeSet<String>();
+		List<String> PRL = new ArrayList<String>();
 		for (int i = 0; i < PR.size(); i++) {
 			PRL.add(PR.get(i).getText());
 
 		}
-		Set<String> PRL1 = new TreeSet<String>(PRL);
+		System.out.println(PRL);
+		List<String> PRL1 = new ArrayList<String>(PRL);
+		Collections.sort(PRL1);
 		System.out.println(PRL1);
 		if (PRL1.equals(PRL)) {
 			System.out.println("SORTED");
@@ -86,5 +88,4 @@ public class SnapDeal {
 		String VSS = driver.findElementByXPath("//span[text()='(21 Items)']").getText();
 		System.out.println("COUNT OF VSS BRAND SHOE IS :" + VSS);
 	}
-
 }
