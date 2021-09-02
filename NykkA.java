@@ -84,8 +84,6 @@ public class NykkA {
 		driver.close();
 		driver.switchTo().window(windowHandlesList.get(0));
 		driver.close();
-
 	}
 
 }
-	 
